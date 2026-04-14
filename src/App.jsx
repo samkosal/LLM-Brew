@@ -9,7 +9,13 @@ function App() {
   return (
     <section>
       <Header />
-      <ContentSection />
+      <ContentSection 
+        Name="hi"
+        Price="hi"
+        Description="hi"
+        Rating="hi"
+        Review="hi"
+      />
     </section>
   )
 }
