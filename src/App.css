@@ -3,18 +3,24 @@
   padding: 0;
 }
 
-
-header {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 45px 60px;
-  padding-bottom: 35px;
-  text-align: left;
-  background-color: darkred;
-  color: darksalmon;
-  font-size: 3.4rem;
-  font-weight: bolder;
+.header-container {
+  display: flex;
 }
 
-.header-Btn {
-  margin-right: 10px;
+.header {
+  width: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 45px 60px 35px;
+  background-color: darkred;
+  color: darksalmon;
+  font-size: 2.4rem;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.header-Btn:first-of-type {
+  margin-left: auto;
 }
