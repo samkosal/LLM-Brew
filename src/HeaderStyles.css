@@ -1,0 +1,41 @@
+.header-container {
+  display: flex;
+}
+
+.header {
+  width: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 3.125rem 3.75rem 3.125rem;
+  background-color: #3b1f0e;
+  color: darksalmon;
+  font-size: 2.4rem;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.header-Btn {
+  background-color: transparent;
+  color: darksalmon;          /* same as header text */
+  border: 1px solid darksalmon;
+  padding: 0.45rem 0.8rem;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.header-Btn:hover {
+  background-color: #d07f66;  /* darker than darksalmon */
+  border-color: #d07f66;
+  color: #fff3ec;
+}
+
+.header-Btn:first-of-type {
+  margin-left: auto;
+}
+
+.header-logo {
+  border-radius: 15%;
+}
