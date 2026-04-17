@@ -11,7 +11,7 @@ function App() {
       Image: "https://upload.wikimedia.org/wikipedia/commons/0/04/OpenAI_Logo.svg",
       Price: "$20/mo",
       Description: "State-of-the-art language model by OpenAI, excels at reasoning and creative tasks.",
-      Rating: "4.9/5",
+      Rating: " ★★★★☆ 4.9/5",
       Review: "Outstanding performance and versatility."
     },
     {
@@ -19,7 +19,7 @@ function App() {
       Image: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
       Price: "$15/mo",
       Description: "Google's advanced LLM, great for search and summarization tasks.",
-      Rating: "4.7/5",
+      Rating: " ★★★★☆ 4.7/5",
       Review: "Excellent for research and information retrieval."
     },
     {
@@ -27,7 +27,7 @@ function App() {
       Image: "https://avatars.githubusercontent.com/u/110084066?s=200&v=4",
       Price: "$18/mo",
       Description: "Claude by Anthropic focuses on safety and helpfulness in conversations.",
-      Rating: "4.8/5",
+      Rating: " ★★★★☆ 4.8/5",
       Review: "Very safe and reliable for business use."
     },
     {
@@ -35,7 +35,7 @@ function App() {
       Image: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Meta_Platforms_Logo.png",
       Price: "Free",
       Description: "Open-source LLM by Meta, great for experimentation and research.",
-      Rating: "4.5/5",
+      Rating: " ★★★★☆ 4.5/5",
       Review: "Flexible and open, but requires setup."
     },
     {
@@ -43,7 +43,7 @@ function App() {
       Image: "https://avatars.githubusercontent.com/u/78782312?s=200&v=4",
       Price: "$10/mo",
       Description: "Cohere's LLM is optimized for business and enterprise NLP tasks.",
-      Rating: "4.6/5",
+      Rating: "★★★★☆ 4.6/5",
       Review: "Great for enterprise and API integration."
     }
   ];
@@ -52,7 +52,7 @@ function App() {
     <>
       <Header />
       <Hero />
-      <div id="models" className="content-sections">
+      <div id="models" className="content-cards-grid">
         {llms.map((llm) => (
           <ContentSection
             key={llm.Name}
