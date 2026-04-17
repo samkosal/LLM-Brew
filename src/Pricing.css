@@ -1,0 +1,100 @@
+:root {
+  --coffee-bg: #7a4d2f; /* Coffee House page background */
+  --card-bg: #b78963; /* Coffee House card background */
+  --card-border: #cda27e; /* Coffee House card border */
+  --card-text: #f0e68c; /* Yellow text for contrast */
+  --card-price-color: #f0e68c; /* Matching yellow price tone */
+  --card-radius: 0.5rem;
+  --card-padding: 1.5rem;
+  --image-placeholder-bg: #8b6347; /* Darker circle for logo contrast */
+}
+
+.pricing-container {
+  padding: 3.125rem 3.75rem;
+  text-align: center;
+  background-color: var(--coffee-bg);
+  color: var(--card-text);
+}
+
+.pricing-container h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
+  color: var(--card-text);
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  padding: var(--card-padding);
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.28);
+}
+
+.pricing-card h3 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  color: var(--card-text);
+}
+
+.pricing-card .price {
+  font-size: 1.5rem;
+  color: var(--card-price-color);
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.pricing-btn.btn:hover {
+  background-color: #5f3a24;
+  border-color: #5f3a24;
+  color: var(--card-text);
+}
+
+.pricing-card-image-placeholder {
+  width: 100px;
+  height: 100px;
+  background-color: var(--image-placeholder-bg);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}
+
+.pricing-card-image-placeholder img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 80%;
+    max-width: 350px;
+  }
+}

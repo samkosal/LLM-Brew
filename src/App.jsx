@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import Header from './Header'
-import ContentSection from './Content/ContentSection';
+import Header from './Header.jsx'
+import ContentSection from './Content/ContentSection'
+import Pricing from './Pricing.jsx'
+import Reviews from './Reviews.jsx'
 import './App.css'
-
-
-
+import './index.css'
 
 function App() {
   const llms = [
@@ -66,6 +66,8 @@ function App() {
           />
         ))}
       </div>
+      <Pricing />
+      <Reviews />
     </>
   )
 }
